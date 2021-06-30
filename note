@@ -1,1 +1,62 @@
-hai
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***6.30***
++复合赋值运算符 x+=5 :x=x+5
+               % 余数
+               ++ 自增1
+               -- 自减1
++操作编程              
+package imooc;
+
+public class a1 {
+
+	 public static void main(String[]args) {
+		 int n1=12;int n2=3;
+		 int r;
+		 //加法
+		 r=n1+n2;
+		 System.out.println(n1+"+"+n2+"="+r);
+		 //减法
+		 r=n1-n2;
+		 System.out.println(n1+"-"+n2+"="+r);
+		 //乘法
+		 r=n1*n2;
+		 System.out.println(n1+"*"+n2+"="+r);
+		 //除法
+		 r=n1/n2;
+		 System.out.println(n1+"/"+n2+"="+r);
+		 //分子分母为整型时，得结果无余数
+		 System.out.println(13/5);
+		 System.out.println(13.0/5);
+		 //余数
+		 r=45%n2;
+		 System.out.println("45"+"%"+n2+"="+r);
+		  
+		 
+		 
+		  
+		
+	 }
+	 
+}
