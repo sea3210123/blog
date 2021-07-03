@@ -34,4 +34,30 @@ public class a1 {
 	 }
 	 
 }
+package imooc;
+
+public class a2 {
+	public static void main(String[]args) {
+		int a=3,b=9;
+		System.out.println("a<b="+(a<b));
+		System.out.println("a>b="+(a>b));
+	
+		int price1,price2;
+		price1=34;price2=98;
+		int sum=price1+price2;
+		System.out.println("sum1="+sum);
+		if(sum>100) {
+			sum-=20;//sum=sum-20;
+			System.out.println("sum2="+sum);
+		}
+	int n=9;
+	if(n%2==0) {
+		System.out.println(n+"为偶数");}
+else {System.out.println("n为奇数");}
+	
+	
+	}
+	
+
+}
 
