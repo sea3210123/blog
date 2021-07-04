@@ -59,10 +59,42 @@ else {System.out.println("n为奇数");}
 	
 	}
 7.4	
-  逻辑运算符  布尔类型
-    与  &  &&(&运算两个条件，&&如果运算一不满足，运算二不运算，值为false)    operator1||operator2
-    或  |  ||      operator1||operator2
-    非  !       !operator
+package imooc;
+import java.util.Scanner;//
+public class a0704 {
+	public static void main(String[]args) {
+		
+		  //逻辑运算符  布尔类型
+		    //与  &  &&(&运算两个条件，&&如果运算一不满足，运算二不运算，值为false)    operator1||operator2
+		    //或  |  ||      operator1||operator2（同上）
+		   // 非  !       !operator
+		int a=4;
+	boolean b=((a--)>(a+3))&(3<(a--));
+    System.out.println("a="+a+" "+"b="+b);
+    //a=2 b=false
+    int c=4;
+    boolean d=((c--)>(c+3))&&(3<(c--));
+    System.out.println("c="+c+" "+"d="+d);
+    //c=3 d=false
+    int e=4;
+    boolean f=((++e)>4)|(4>6);
+    System.out.println("e="+e+" "+"f="+f);
+    //e=5 f=true
+    int g=5;
+    boolean h=(6<9)||((g--)<7);
+    System.out.println("g="+g+" "+"h="+h);
+    //g=5 h=true
+    System.out.println("请输出一个整数");
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    if(!(n%4==0)){
+    	System.out.println(n+"不为4的倍数");
+    }else {System.out.println(
+    	n+"是4的倍数");
+    }
+   //请输出一个整数
+   // 52
+   //52是4的倍数
     
    
 
