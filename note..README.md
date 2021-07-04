@@ -95,6 +95,24 @@ public class a0704 {
    //请输出一个整数
    // 52
    //52是4的倍数
+   
+   //条件运算符
+    //单目运算符  n++
+    //双目运算符  a+b
+    //三目运算符  布尔表达式？表达式1:表达式2
+              //  （true到式1，false到式2）
+    int M=4,N=8;
+    int max;
+    if(M>N) {max=M;
+    }else {
+    	max=N;
+    }
+    System.out.println("max="+max);
+    //max=8
+    max=M>N?M:N;
+    System.out.println("max="+max);
+    //max=8
+   
     
    
 
