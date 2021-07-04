@@ -31,7 +31,8 @@ public class a1 {
 		 System.out.println("x="+x+" y="+y);
 		//++x先自增后运算  x++反之
 		 //--x同理
-	 }
+	 
+	 
 	 
 }
 package imooc;
@@ -57,7 +58,13 @@ else {System.out.println("n为奇数");}
 	
 	
 	}
-	
+7.4	
+  逻辑运算符  布尔类型
+    与  &  &&(&运算两个条件，&&如果运算一不满足，运算二不运算，值为false)    operator1||operator2
+    或  |  ||      operator1||operator2
+    非  !       !operator
+    
+   
 
-}
+
 
