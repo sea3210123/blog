@@ -31,6 +31,31 @@ public class a1 {
 		 System.out.println("x="+x+" y="+y);
 		//++x先自增后运算  x++反之
 		 //--x同理
+		 7.5
+		 {package imooc;
+import java.util.Scanner;
+public class a0705 
+	//运算符的优先级
+	//()>>!,++,-->>*，/，%》》+,-》》<,<=》》
+    //==，!=》》&&》》||》》=，+=，*=，/=，-=，%=
+	public static void main(String[]args) {
+	int n=4,m=8;
+	int v=(n--)+(n/m)*n;
+	System.out.println("v="+v+n);
+	//v=43      4/8=0
+	//判断是否为闰年
+	  System.out.println("请输出一个年份");
+	    Scanner sc=new Scanner(System.in);
+	    int a=sc.nextInt();
+	    //if(a%400==0) 
+	    	if((a%4==0)&(a%100!=0)|(a%400==0))
+	    {System.out.println(a+"为闰年");}
+	    else {System.out.println(a+"不是闰年");}
+	    
+	}
+	
+}
+
 	 
 	 
 	 
