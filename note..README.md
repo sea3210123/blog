@@ -138,7 +138,104 @@ public class a0704 {
     System.out.println("max="+max);
     //max=8
    
-    
+    7.9
+ java
+       三大流程控制语句：顺序、选择（if else）、循环
+   选择结构
+         if(条件){语句；}    if(){}else{}
+               多行注释  /*         */
+               多重if结构:
+                      if(表达式1)
+                          {语句1;}
+                        else if(表达式2)
+                              {语句2;}
+                           ...
+                           else{语句n;}
+               嵌套if结构
+                      if(表达式1)
+                      if（,,,）
+                       语句；
+                        else
+                           语句；
+         switch结构
+              switch(表达式){
+                    case 常量表达式1：
+                          语句1；break;
+                     case 常量表达式2：
+                            语句2；break；
+                       default:
+                                  语句3；            
+}
+                     。。。.toUpperCase()//把字符串全部转化为。。。
+   note :
+               package imooc;
+import java.util.Scanner;
+
+public class a0709 {
+
+	public static void main(String[] args) {
+		
+		
+		/*System.out.println("请输出成绩；");
+		Scanner sc=new Scanner(System.in);
+		int score=sc.nextInt();
+		if(score>=90) {System.out.println("优");}
+		if(80<=score&score<90) {System.out.println("良");}
+		if(60<=score&score<80) {System.out.println("中");}
+		if(score<60) {System.out.println("不及格");}
+		*/
+		/*if(score>=90)
+		{System.out.println("优");}
+		else if(80<=score)//80<=score&score<90//score<=90不满足
+		{System.out.println("良");}
+		else if(60<=score)//60<=score&score<80
+		{System.out.println("中");}
+		else //else (score<60)
+		{System.out.println("不及格");}
+		*/
+		  
+		/*System.out.print("x=");
+		Scanner sc=new Scanner(System.in);
+		int x=sc.nextInt();
+		if(x<0)
+		{System.out.println("y=-1");}
+		else if(x==0)
+		{System.out.println("y=0");}
+		else if(x>0)
+		{System.out.println("y=1");}
+		*/
+		//x=-5
+		//y=-1
+		//int a=3,b=7;
+		//if(a!=b) {
+			//if(a<b) {System.out.println(a+"小于"+b);}
+			//else {System.out.println(a+"大于"+b);}
+		//}else {System.out.println(a+"等于"+b);}
+		//3小于7
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("请输出1-7之间的数字");
+		int n=sc.nextInt();
+		  switch(n) {
+		  case 1:System.out.println("星期一");break;
+		  case 2:System.out.println("星期二");break;
+		  case 3:System.out.println("星期三");break;
+		  case 4:System.out.println("星期四");break;
+		  case 5:System.out.println("星期五");break;
+		  case 6:System.out.println("星期六");break;
+		  case 7:System.out.println("星期天");break;
+		  default:System.out.println("超出1-7");
+		  请输出1-7之间的数字
+                                   5
+                                    星期五
+
+		
+		  }
+		
+		
+	}
+
+  
    
 
 
