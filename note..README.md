@@ -235,7 +235,98 @@ public class a0709 {
 		
 	}
 
-  
+  7.10
+循环：while循环，do-while循环，for循环，循环嵌套，break语句，continue语句
+     while循环
+                 while（循环条件）{语句；}
+      do-while    
+                  do{语句；}while（循环条件）；
+                              Math.random()//[0,1)之间的数
+       for循环
+                   for（表达式1；表达式2；表达式3）
+                          {语句}
+                     package imooc;
+import java.util.Scanner;
+public class a0710 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     /*int n=1;
+     while(n<5){System.out.println(n);n++;}
+     1
+     2
+     3
+     4*/
+     /*int sum=0;
+     while(n<=5){sum=sum+n;n++;}
+	System.out.println("sum="+sum);	
+     sum=15*/
+		 
+     /*char eng='a';
+     int c=1;
+     while(eng<='z') {System.out.print(eng);eng++;if(c%13==0) {System.out.println();};c++;}
+     abcdefghijklm
+     nopqrstuvwxyz*/
+	/*	int n=1,sum=0;
+	do {
+		sum=sum+n;n++;
+	}while(n<=5);	
+  System.out.println(sum);
+  15*/
+		/*int number=5;
+		int guess;
+		System.out.println("请输入1-10之间的数");
+		do {System.out.println("你猜的数为：");
+		Scanner sc=new Scanner(System.in);
+	    guess=sc.nextInt();
+		if(guess<number) {System.out.println("太小");};
+		if(guess>number) {System.out.println("太大");};
+		
+		
+		}while(number!=guess);
+		System.out.println("恭喜你猜对了");
+请输入1-10之间的数
+你猜的数为：
+2
+太小
+你猜的数为：
+6
+太大
+你猜的数为：
+9
+太大
+你猜的数为：
+5
+恭喜你猜对了*/
+		
+		/*int number=(int)(Math.random()*10+1);//强制类型转换 double转化为int 
+		int guess;
+		System.out.println("请输入1-10之间的数");
+		do {System.out.println("你猜的数为：");
+		Scanner sc=new Scanner(System.in);
+	    guess=sc.nextInt();
+		if(guess<number) {System.out.println("太小");};
+		if(guess>number) {System.out.println("太大");};
+		
+		
+		}while(number!=guess);
+		System.out.println("恭喜你猜对了");
+		请输入1-10之间的数
+		你猜的数为：
+		5
+		太小
+		你猜的数为：
+		4
+		太小
+		你猜的数为：
+		6
+		太小
+		你猜的数为：
+		7
+		太小
+		你猜的数为：
+		8
+		恭喜你猜对了*/
    
 
 
