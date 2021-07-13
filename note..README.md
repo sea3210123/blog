@@ -327,6 +327,21 @@ public class a0710 {
 		你猜的数为：
 		8
 		恭喜你猜对了*/
+		
+		7.13
+ for循环
+    for（表达式1；表达式2；表达式3）{语句；}
+        例：for（int n=1；n<5;n++）{}//变量n只有在{}中有用
+                  执行顺序   for(1;2;4){3}
+                    break 跳出循环//if(...)break
+           package imooc;
+
+public class a0713 {
+	public static void main(String[] args) {
+		int sum=0;
+		for(int n=1;n<=5;n++) {sum=sum+n;}
+		System.out.println("sum="+sum);
+		sum=15 
    
 
 
