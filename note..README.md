@@ -342,7 +342,31 @@ public class a0713 {
 		for(int n=1;n<=5;n++) {sum=sum+n;}
 		System.out.println("sum="+sum);
 		sum=15 
-   
+   7.14
+嵌套
+      while嵌套
+                    while（）{while(){}}
+   求1!+2!+3!....10!=
+              /*	int n=1,m=1,h=1,j=0;
+		while(h<=10) {while(n<=h) {m=m*n;n++;}
+	h++;j=j+m;	}
+		System.out.println(j);
+	}
+	//4037913*/
+		/*int j=0;//必须在循环外面
+		for(int n=1,m=1;m<=10;m++) 
+		{n=1;
+			for(int h=1;h<=m;h++)
+		{n=n*h;};
+		j=n+j;}
+		System.out.println(j);
+		//4037913*/
+         continue语句  跳出本次循环，继续下次循环
+                          if()continue
+  程序调试 --debug
+         1 断点
+          2单步调试F5
+       F8 从一个断点跳到另一个断点
 
 
 
