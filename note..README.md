@@ -367,6 +367,56 @@ public class a0713 {
          1 断点
           2单步调试F5
        F8 从一个断点跳到另一个断点
-
+.16
+  声明数组   int[] m;
+  创建数组  m=new int[9];
+                int[] m=new int[9];
+  初始化    int[] m={'a'};
+package imooc;
+import java.util.Scanner;
+import java.util.scanner;
+public class a0716 {
+	public static void main(String[] args) {
+		/*//求数组累加和
+		int[] a=new int[5];
+		Scanner sc=new Scanner(System.in);
+	  
+		for(int i=0;i<a.length;i++) {
+			 System.out.println("请输出第"+(i+1)+"数字");
+			 a[i]=sc.nextInt();
+		}
+		System.out.print("你输入的数组为:");
+		for(int i=0;i<a.length;i++) {
+			System.out.print(a[i]+" ");
+		}
+		int sum=0;
+		for(int i=0;i<a.length;i++) {
+			sum=sum+a[i];
+		}
+		System.out.println();
+		System.out.println("你的数组和为"+sum);
+   //请输出第1数字
+	5
+	请输出第2数字
+	6
+	请输出第3数字
+	8
+	请输出第4数字
+	66
+	请输出第5数字
+	5
+	你输入的数组为:5 6 8 66 5 
+	你的数组和为90
+    */
+// 求数组中最大值
+		int[] a= {908,6758654,896,978};
+		int max=a[1];
+		for(int n=0;n<a.length;n++) {
+		if(max<a[n]) {
+		max=a[n];
+		}
+		}
+		System.out.println("max"+"="+max);
+//max=6758654
 
 
