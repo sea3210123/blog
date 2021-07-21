@@ -418,5 +418,135 @@ public class a0716 {
 		}
 		System.out.println("max"+"="+max);
 //max=6758654
+ 7.21
+  无参无返回值方法
+            public class a0721 {
+	public void star() {
+		System.out.println("*********");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       a0721 a=new a0721();
+       a.star();
+	}
+
+}
+   无参带返回值方法
+                public int a(){}
+        public int area(){
+   	   int length=7;
+   	   int width=8;
+   	   int s=length*width;
+   	   return s;
+      }
+         // 无参带返回值方法
+     a0721 S=new a0721();
+     System.out.println("S="+S.area())
+;
+
+   带参无返回值
+          public void a(float a,float b){}
+       // public void max(float a,float b) {
+		 float max;
+		   if(a<b) {
+			   max=b;
+		   }else {
+			   max=a;
+		   }
+		   System.out.println("max="+max);
+		    
+	   }
+        /*  a0721 bc=new a0721();
+     float a=4f,b=7f;
+     bc.max(a, b);
+     bc.max(34f, 67f);
+    // max=7.0
+     max=67.0*/
+有参有返回值的方法 (方法不能嵌套定义)
+      public int fac(int n){}
+//求1！+2！+3！+4！+5！=
+            public int jc(int n) {
+		 int s=1;
+		 for(int i=1;i<=n;i++) {
+			 s*=i;
+		 }
+		 return s;
+	 }
+              a0721 a=new a0721();
+        
+         System.out.println("3!="+a.jc(3));
+         int sum=0;
+        for(int i=1;i<=5;i++) {
+        	sum+=a.jc(i);
+        }
+       System.out.println("sum="+sum);
+      //数组做参数
+    public void sz(int[] arr) {
+		for(int i=0;i<arr.length;i++) {
+			System.out.print(arr[i]+" ");
+		}
+	}   
+int[] n= {34,2,11,22};
+       a.sz(n);
+//34 2 11 22 
+ 
+//数组中找数字
+         public void sz(int[] arr) {
+		for(int i=0;i<arr.length;i++) {
+			System.out.print(arr[i]+" ");
+		}
+	}
+	 public boolean search(int n,int[]arr) {
+		 boolean a1=false;
+		 for(int i=0;i<arr.length;i++) {
+			 if(arr[i]==n) {
+				a1=true;
+				break;
+			 }
+		 }
+		 return a1;
+	 }
+               /*a0721 a=new a0721();
+	 * 	int[] m= {34,23,55,67,43,12};
+		System.out.println("请输入你要找的数字");
+		Scanner sc=new Scanner(System.in);
+		int e=sc.nextInt();
+		
+		if(a.search(e, m)==true) {
+			System.out.println("找到了");
+		}else {
+			System.out.println("没找到");
+		}
+	//	请输入你要找的数字
+		54
+		没找到*/
+         方法重载  方法名相同参数不同
+                       public int pluse(int m,int n) {
+		return m+n;
+	}
+	public double pluse(double m,double n) {
+		return m+n;
+	}
+	public int pluse(int[] arr) {
+		int sum=0;
+		for(int i=0;i<arr.length;i++) {
+			sum+=arr[i];
+		}
+		return sum;
+	}
+                   /* int[] a1= {23,4,56,77,88,87};
+		 a0721 a=new a0721();
+		  int n=8,m=7;
+		  double aa=6.7,b=5.8;
+		 System.out.println("sum="+a.pluse(a1));
+		 System.out.println("m+n="+a.pluse(m, n));
+		 System.out.println("aa+b="+a.pluse(aa, b));
+		// sum=335
+				 m+n=15
+				 aa+b=12.5
+
+		*/ 
+
 
 
