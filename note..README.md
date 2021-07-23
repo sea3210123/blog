@@ -548,5 +548,140 @@ int[] n= {34,2,11,22};
 
 		*/ 
 
+package imooc;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+public class a0722 {
+	Scanner sc=new Scanner(System.in);
+	//插入数据
+	public int[] insertData() {
+		int[] a1=new int[10];
+		for(int i=0;i<a1.length-1;i++) {
+			System.out.println("请输入第"+(i+1)+"个数字");
+			try{a1[i]=sc.nextInt();}
+			catch( InputMismatchException e)
+			{System.out.println("你输入的数据有误！");
+			sc.next();	//接受非数字字符
+			i--;}//再次输入
+		}
+		return a1;
+	}
+	//显示所有数据
+	public void showDate(int[] a,int length) {
+		System.out.print("你输入的数组为");
+		for(int i=0;i<length;i++) {
+			int n=a[i];
+			System.out.print(n+" ");
+			
+		}
+		System.out.println();
+	}
+ /*  从键盘中插入数据
+	a 要插入的数组
+	n 要插入的数据
+	k 要插入的位置
+	*/
+	public void insertAtArray(int[] a,int n,int k) {
+		for(int i=a.length-1;i>=k;i--) {
+			a[i]=a[i-1];
+		}a[k-1]=n;
+		
+	}
+    public void notice() {
+    	System.out.println("******************************");
+    	System.out.println("          1--插入数据");
+    	System.out.println("          2--显示所有数据");
+    	System.out.println("          3--在指定位置插入数据");
+    	System.out.println("          4--查询能被3整出的数据");
+    	System.out.println("          0--退出");
+    	System.out.println("******************************");
+		
+    }
+    public void three(int[] a) {
+	for(int i=0;i<a.length;i++) {if(a[i]%3==0) {System.out.println(a[i]+" ");}
+	}}
+    public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+       a0722 a=new a0722();
+     /*  int[] a1=a.insertData();
+       a.showDate(a1,a1.length-1);
+       System.out.print("请输入你插入的数据");
+       int n=sc.nextInt();
+       System.out.println();
+       System.out.print("请输入你插入的位置");
+       int k=sc.nextInt();
+       a.insertAtArray(a1, n, k);
+       a.showDate(a1, a1.length);
+       */
+       int m;
+       int[] a1=null;
+       int n=0;
+       int k=0;
+       while(true) {
+    	   a.notice();
+    	   System.out.println("请输入对应的数字进行操作：");
+          try { m=sc.nextInt();}
+          catch( InputMismatchException e)
+			{System.out.println("你输入的数据有误！");
+			sc.next();
+			continue;
+			
+			}
+    	   if(m==0) {
+    		   System.out.println("退出");
+    		   break;
+    		  
+    	   }
+    	   if(m>4) {System.out.println("数据错误");}
+    	   switch(m) {
+    	   case 1:
+    		  a1=a.insertData(); break;
+    	   case 2:
+    		   if(a1!=null) {
+    			   if(a1[9]==0) {
+    				   a.showDate(a1, a1.length-1);
+    			   }else {a.showDate(a1, a1.length);}
+    		   }else {
+    			   System.out.println("数组无数据，请重新操作");
+    		   }
+    		   break;
+    	   case 3:
+    		   if(a1==null) {
+    			   System.out.println("数组无数据，请重新操作"); 
+    		   }else {
+    			   System.out.println("请输入你插入的数据：");
+    			  try{ n=sc.nextInt();
+    			  
+    			   System.out.println("请输入你插入的位置：");
+    			    k=sc.nextInt();
+    			  if(k>10) {System.out.println("不能大于10");
+    			  break;} 
+    			  }
+    			  catch( InputMismatchException e) {
+    				  System.out.println("你输入的数据有误！");
+    				  sc.next();
+    				  break;
+    			  }
+    			   a.insertAtArray(a1, n, k);
+    		   }
+    		   break;
+    	   case 4:
+    		  if(a1==null) {
+    			  System.out.println("数组无数据，请重新操作");
+    		  }else {a.three(a1);}
+    	   
+    	   
+    	   }
+    	 
+       }
+       
+       
+       
+       
+       
+         
+	}
+}
 
 
