@@ -683,5 +683,60 @@ public class a0722 {
          
 	}
 }
+String name;
+	int mouth;
+	int weight;
+	String species;
+	public fangfa(String name,int mouth,int weight,String species) {
+		name=name;
+		mouth=mouth;
+		weight=weight;
+		species=species;
+ 就近原则造成的逻辑错误
+           修改名字
+           this.name=name;
+       可用this在构造方法中调用构造方法
+     public class fangfa {
+	String name;
+	int mouth;
+	int weight;
+	String species;
+	public fangfa(String name,int mouth,int weight,String species) {
+		this.name=name;
+		this.mouth=mouth;
+		this.weight=weight;
+		this.species=species;
+	}
+	public fangfa() {
+		System.out.println("小猫1");
+	}
+	public void run() {
+		System.out.println("快跑");
+		
+	}
+	
+}
+package imooc;
+
+public class cat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+      fangfa a=new fangfa("花花",2,1000,"短毛猫");
+		/*a.run();
+		a.name="花花";
+		a.mouth=2;
+		a.weight=1000;
+		a.species="短毛猫";
+	*/
+        System.out.println("name:"+a.name);
+		System.out.println("mouth:"+a.mouth);
+	    System.out.println("weight:"+a.weight);
+	    System.out.println("species"+a.species);
+	
+	}
+
+}
 
 
