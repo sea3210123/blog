@@ -738,5 +738,37 @@ public class cat {
 	}
 
 }
-
+7.31 java
+  继承，封装，多态
+封装实现步骤 
+                      修改熟悉的可见性    设为private
+                                              private String name;
+                      创建getter/setter方法   设为public用于属性的续写
+                                              public void setname(String name) {
+		this.name=name;
+	}
+	public String getname() {
+		return name;
+	}
+                      在getter/setter方法中加入属性控制语句    对属性值的合法性进行判断
+                                  a.setname("花花");
+        System.out.println("name:"+a.getname());         
+ 
+   跨包引用
+         import 包名.*    //调用该包中所有类
+         import 包名.类名    // 
+   static :静态成员，静态              
+               1.类对象共享
+                2.类加载时产生，销毁时释放，生命周期长
+      静态方法访问
+          对象名.成员
+          类.成员
+   static 属性       -->静态属性
+   静态+类，局部变量  --》不存在
+静态方法中不能直接访问同一个类的非静态成员，只能直接调用同一个类中的静态成员
+ 只能通过对象实例化后，对象，成员方法的方式访问非静态成员
+静态方法中不能使用this
+  public void a(){
+{代码块2  }{代码块1}
+}
 
